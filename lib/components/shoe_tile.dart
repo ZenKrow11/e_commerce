@@ -3,8 +3,8 @@ import '/models/shoe.dart';
 
 class ShoeTile extends StatelessWidget {
   final Shoe shoe;
-
-  ShoeTile({super.key, required this.shoe});
+  final void Function()? onTap;
+  ShoeTile({super.key, required this.shoe, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -70,16 +70,16 @@ class ShoeTile extends StatelessWidget {
                     SizedBox(height: 35),
 
                     //Add to cart button
-                Container(
-                  height: 50,
-                  width: 200,
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: InkWell(
-                    onTap: () {},
-                    borderRadius: BorderRadius.circular(10),
+                InkWell(
+                  onTap: onTap,
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 50,
+                    width: 200,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

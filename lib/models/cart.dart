@@ -1,4 +1,6 @@
 import 'package:e_commerce_tut/models/shoe.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class Cart extends ChangeNotifier {
 
@@ -23,7 +25,7 @@ class Cart extends ChangeNotifier {
 
     Shoe(
         name: "Sneaker 4",
-        price: "175",
+        price: '175',
         imagePath: "lib/images/sneaker_4.jpeg",
         description: "Sport Shoe"),
   ];
