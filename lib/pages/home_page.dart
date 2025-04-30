@@ -40,7 +40,43 @@ class _HomePageState extends State<HomePage> {
         ),
         //Drawer
         endDrawer: Drawer(
+          backgroundColor: Colors.grey[800],
+          child: Column(
+            children: [
+              // logo
+            DrawerHeader(
+              child: Image.asset('lib/images/nike.png'),
+          ),
+              Padding(padding: const EdgeInsets.all(10.0),
+                child: Divider(
+                  color: Colors.grey[600],
+              ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: ListTile(
+                  leading: Icon(Icons.home, color: Colors.grey[400]),
+                  title: Text('Home', style: TextStyle(color: Colors.grey[400])),
+                ),
+              ),
 
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: ListTile(
+                  leading: Icon(Icons.shopping_basket, color: Colors.grey[400]),
+                  title: Text('Basket', style: TextStyle(color: Colors.grey[400])),
+                ),
+              ),
+
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: ListTile(
+                  leading: Icon(Icons.logout, color: Colors.grey[400]),
+                  title: Text('Log Out', style: TextStyle(color: Colors.grey[400])),
+                ),
+              ),
+            ]
+        ),
         ),
 
         //PageLayout
