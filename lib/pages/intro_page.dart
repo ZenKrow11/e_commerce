@@ -57,7 +57,8 @@ class IntroPage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                child: Text('Shop Now'),
+                child:
+                Text('Shop Now'),
               )
 
             ]
