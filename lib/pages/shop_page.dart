@@ -20,7 +20,17 @@ class _ShopPageState extends State<ShopPage> {
     //alert user
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text("${shoe.name} added to cart"),
+        backgroundColor: Colors.black,
+        behavior: SnackBarBehavior.floating,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10.0),
+        ),
+        content: Text("${shoe.name} added to basket",
+        style: TextStyle(
+          color: Colors.white,
+        ),
+          textAlign: TextAlign.center,
+        ),
       ),
     );
   }
