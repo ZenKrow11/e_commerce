@@ -20,6 +20,8 @@ class _ShopPageState extends State<ShopPage> {
     //alert user
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
+        width: 300,
+        duration: Duration(milliseconds: 1000),
         backgroundColor: Colors.black,
         behavior: SnackBarBehavior.floating,
         shape: RoundedRectangleBorder(
@@ -27,7 +29,8 @@ class _ShopPageState extends State<ShopPage> {
         ),
         content: Text("${shoe.name} added to basket",
         style: TextStyle(
-          color: Colors.white,
+          color: Colors.grey[300],
+          fontSize: 18,
         ),
           textAlign: TextAlign.center,
         ),

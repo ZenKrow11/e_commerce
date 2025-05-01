@@ -24,8 +24,8 @@ class ShoeTile extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Column(
               children: [
-                // Show pic
 
+                // Show pic
                 Container(
                   width: 300,
                   height: 250,
@@ -33,7 +33,7 @@ class ShoeTile extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Transform.scale(
-                    scale: 2.0,
+                    scale: 1.5,
                     child: Image.asset(
                       shoe.imagePath,
                       width: 250,
@@ -86,7 +86,7 @@ class ShoeTile extends StatelessWidget {
                         Icon(Icons.add_shopping_cart, color: Colors.white),
                         SizedBox(width: 8),
                         Text(
-                          "ADD TO CART",
+                          "ADD TO BASKET",
                           style: TextStyle(color: Colors.white),
                         ),
                       ],
